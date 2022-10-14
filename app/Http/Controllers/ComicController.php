@@ -39,7 +39,15 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        // dd('ciao');
+        $params = $request->all();
+        // dd($request->all());
+        // $c = new Comic();
+        // $c->fill($params);
+        // $c->save();
+        $c = Comic::create($params);
+        dd($c);
+
+        
     }
 
     /**

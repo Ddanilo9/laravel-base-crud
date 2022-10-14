@@ -2,6 +2,11 @@
 
 @section('content')
     
+<section>
+    <div style="margin: 50px 0px; text-align:center">
+        <a href="{{route('comics.create')}}">AGGIUNGI COMIC</a>
+    </div>
+</section>
 <table>
 <thead>
     <tr>
@@ -26,6 +31,7 @@
             <td>{{$c->thumb}}</td>
             <td>{{$c->price}}</td>
             <td>{{$c->series}}</td>
+            <td>{{$c->sale_date}}</td>
             <td>{{$c->type}}</td>
         </tr>
     @endforeach
