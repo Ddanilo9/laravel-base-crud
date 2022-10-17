@@ -1,7 +1,9 @@
 <header>
     <nav>
         <ul>
-            <a href="{{('homepage')}}">Home</a>
+            <li>
+                <a href="{{('/')}}">Home</a>
+            </li>
             <li>
                 <a href="{{route('comics.index')}}">
                     Comics</a>

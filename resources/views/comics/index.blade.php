@@ -7,11 +7,12 @@
         <a href="{{route('comics.create')}}">AGGIUNGI COMIC</a>
     </div>
 </section>
-<table>
+<table class="greyGridTable">
 <thead>
     <tr>
         <th>Id</th>
         <th>title</th>
+        <th>description</th>
         <th>thumb</th>
         <th>price</th>
         <th>series</th>
@@ -25,8 +26,8 @@
             <td>{{$c->id}}</td>
             <td>
                 <a href="{{route('comics.show', $c)}}">
-                    {{$c->title}}</td>
-                </a>
+                    {{$c->title}}</a>
+            </td>
             <td>{{$c->description}}</td>
             <td>{{$c->thumb}}</td>
             <td>{{$c->price}}</td>

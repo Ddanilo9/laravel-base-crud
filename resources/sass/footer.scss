@@ -1,0 +1,14 @@
+footer{
+    background-image: linear-gradient(to top, #464647, #5f5f61, #6e6e70, #7d7d7f, #8d8d8f);
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+        a{
+            font-size: 16;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
