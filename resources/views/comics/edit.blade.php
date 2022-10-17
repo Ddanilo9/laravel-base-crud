@@ -2,12 +2,14 @@
 
 @section('content')
     <h1>aggiungi un nuovo comic!</h1>
-    <form action="{{route('comics.store')}}" method="POST">
+    <form action="{{route('comics.update', $comic)}}" method="POST">
+
         @csrf
+        @method('PUT')
 
         <p>
             <label for="">Title</label>
-            <input type="text" name="title" id="title" value="{{old('name')}}" placeholder="nome comic"> 
+            <input type="text" name="title" id="title" value="{{$comic->title}}" placeholder="nome comic"> 
         </p>
         <p>
             <label for="">Description</label>

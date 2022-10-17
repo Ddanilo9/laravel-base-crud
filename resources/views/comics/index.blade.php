@@ -33,6 +33,7 @@
             <td>{{$c->series}}</td>
             <td>{{$c->sale_date}}</td>
             <td>{{$c->type}}</td>
+            <td><a href="{{route('comics.edit', $c)}}">edit</a></td>
         </tr>
     @endforeach
 </tbody>
